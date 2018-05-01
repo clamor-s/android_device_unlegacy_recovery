@@ -66,6 +66,7 @@ TARGET_USES_MKE2FS := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
+TW_DEVICE_VERSION := 0 UA
 TARGET_RECOVERY_FSTAB = device/lge/hammerhead/fstab.hammerhead
 BOARD_HAS_NO_REAL_SDCARD := true
 BOARD_SUPPRESS_SECURE_ERASE := true
