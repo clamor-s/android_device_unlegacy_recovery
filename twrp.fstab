@@ -6,7 +6,7 @@
 /data            ext4        /dev/block/platform/msm_sdcc.1/by-name/userdata                flags=encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
 /cache           ext4        /dev/block/platform/msm_sdcc.1/by-name/cache
 /misc            emmc        /dev/block/platform/msm_sdcc.1/by-name/misc
-/persist         ext4        /dev/block/platform/msm_sdcc.1/by-name/persist                 flags=backup=1;display=Persist 
+/persist         emmc        /dev/block/platform/msm_sdcc.1/by-name/persist                 flags=backup=1;display=Persist 
 /efs1            emmc        /dev/block/platform/msm_sdcc.1/by-name/m9kefs1                 flags=backup=1;display=EFS
 /efs2            emmc        /dev/block/platform/msm_sdcc.1/by-name/m9kefs2                 flags=backup=1;subpartitionof=/efs1
 /efs3            emmc        /dev/block/platform/msm_sdcc.1/by-name/m9kefs3                 flags=backup=1;subpartitionof=/efs1
