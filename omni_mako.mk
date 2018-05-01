@@ -29,3 +29,9 @@ PRODUCT_DEVICE := mako
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
+
+# Device build info and fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=occam \
+    BUILD_FINGERPRINT="google/occam/mako:5.1.1/LMY48T/2237560:user/release-keys" \
+    PRIVATE_BUILD_DESC="occam-user 5.1.1 LMY48T 2237560 release-keys"
