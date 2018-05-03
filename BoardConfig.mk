@@ -68,6 +68,7 @@ TARGET_USES_MKE2FS := true
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_FSTAB = device/lge/hammerhead/fstab.hammerhead
 BOARD_HAS_NO_REAL_SDCARD := true
+BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_NO_USB_STORAGE := true
 TW_INCLUDE_CRYPTO := true
