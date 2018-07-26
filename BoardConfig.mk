@@ -58,6 +58,7 @@ TARGET_USES_MKE2FS := true
 
 # TWRP Configuration
 TW_THEME := landscape_hdpi
+TW_DEVICE_VERSION := 0 UA
 TARGET_RECOVERY_FSTAB := device/asus/transformer/fstab.transformer
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/transformer/recovery.mk
 RECOVERY_SDCARD_ON_DATA := true
