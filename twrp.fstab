@@ -1,0 +1,10 @@
+# mount point      fstype          device                                            flags
+
+/system            ext4            /dev/block/platform/sdhci-tegra.3/by-name/APP
+/cache             ext4            /dev/block/platform/sdhci-tegra.3/by-name/CAC
+/misc              emmc            /dev/block/platform/sdhci-tegra.3/by-name/MSC
+/staging           emmc            /dev/block/platform/sdhci-tegra.3/by-name/USP
+/data              ext4            /dev/block/platform/sdhci-tegra.3/by-name/UDA     flags=length=-16384
+/recovery          emmc            /dev/block/platform/sdhci-tegra.3/by-name/SOS
+/boot              emmc            /dev/block/platform/sdhci-tegra.3/by-name/LNX
+/external_sdcard   vfat            /dev/block/platform/sdhci-tegra.0/by-num/p1       flags=display="Micro SD Card";storage;wipeingui;removable
