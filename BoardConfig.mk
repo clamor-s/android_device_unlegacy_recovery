@@ -47,10 +47,10 @@ WITH_DEXPREOPT_BOOT_IMG_ONLY := true
 # Kernel information
 BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := qc750_recovery_defconfig
-TARGET_KERNEL_SOURCE := kernel/nvidia/tegra3
+TARGET_KERNEL_SOURCE := kernel/nvidia/wexler
 
 # Kernel toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.6/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Use mke2fs to create ext4 images
