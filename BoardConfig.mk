@@ -41,9 +41,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Partitions block size
 BOARD_FLASH_BLOCK_SIZE := 4096
 
-# Only pre-optimize the boot image
-WITH_DEXPREOPT_BOOT_IMG_ONLY := true
-
 # Kernel information
 BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := qc750_recovery_defconfig
@@ -67,5 +64,4 @@ TW_NO_USB_STORAGE := false
 TW_INCLUDE_CRYPTO := true
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-TW_EXCLUDE_SUPERSU := true
 TW_EXCLUDE_TWRPAPP := true
