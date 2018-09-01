@@ -4,6 +4,7 @@
 /cache             ext4            /dev/block/mmcblk0p2
 /misc              emmc            /dev/block/mmcblk0p3
 /staging           emmc            /dev/block/mmcblk0p4
+/vendor            ext4            /dev/block/mmcblk0p7                            flags=display="Vendor";wipeingui;backup=1
 /data              ext4            /dev/block/mmcblk0p8                            flags=length=-16384
 /recovery          emmc            /dev/block/mmcblk0p9
 /boot              emmc            /dev/block/mmcblk0p10
