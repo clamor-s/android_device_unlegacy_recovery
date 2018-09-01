@@ -43,7 +43,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Kernel information
-BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME)
+BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := transformer_recovery_defconfig
 TARGET_KERNEL_SOURCE := kernel/nvidia/tegra3
 
