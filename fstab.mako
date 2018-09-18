@@ -5,6 +5,7 @@
 #<src>                                              <mnt_point>     <type>  <mnt_flags and options>                                         <fs_mgr_flags>
 
 /dev/block/platform/msm_sdcc.1/by-name/system       /system         ext4    ro,barrier=1                                                    wait
+/dev/block/platform/msm_sdcc.1/by-name/vendor       /vendor         ext4    ro,barrier=1                                                    wait
 /dev/block/platform/msm_sdcc.1/by-name/cache        /cache          f2fs    rw,noatime,nosuid,nodev,inline_xattr                            wait,check
 /dev/block/platform/msm_sdcc.1/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered                     wait,check
 /dev/block/platform/msm_sdcc.1/by-name/userdata     /data           f2fs    rw,noatime,nosuid,nodev,inline_xattr                            wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata

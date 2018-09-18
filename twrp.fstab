@@ -3,6 +3,7 @@
 /boot            emmc        /dev/block/platform/msm_sdcc.1/by-name/boot
 /recovery        emmc        /dev/block/platform/msm_sdcc.1/by-name/recovery
 /system          ext4        /dev/block/platform/msm_sdcc.1/by-name/system
+/vendor          ext4        /dev/block/platform/msm_sdcc.1/by-name/vendor                  flags=display="Vendor";wipeingui;backup=1
 /data            ext4        /dev/block/platform/msm_sdcc.1/by-name/userdata                flags=encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
 /cache           ext4        /dev/block/platform/msm_sdcc.1/by-name/cache
 /misc            emmc        /dev/block/platform/msm_sdcc.1/by-name/misc
