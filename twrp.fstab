@@ -1,6 +1,7 @@
 # mount point      fstype  device                                                           flags
 
 /system            ext4    /dev/block/platform/msm_sdcc.1/by-name/system
+/vendor            ext4    /dev/block/platform/msm_sdcc.1/by-name/vendor                    flags=display="Vendor";wipeingui;backup=1
 /data              ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata                  flags=encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
 /cache             ext4    /dev/block/platform/msm_sdcc.1/by-name/cache
 /boot              emmc    /dev/block/platform/msm_sdcc.1/by-name/boot
