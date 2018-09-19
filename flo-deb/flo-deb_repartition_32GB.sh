@@ -22,11 +22,11 @@ parted /dev/block/mmcblk0 <<EOF
   rm 30
   mkpart primary 614429696B 2187293695B
   name 22 system
-  mkpart primary 2187293696B 2270167039B
+  mkpart primary 2187293696B 2263875583B
   name 23 cache
-  mkpart primary 2270167040B 2271215615B
+  mkpart primary 2263875584B 2264924159B
   name 24 misc
-  mkpart primary 2271215616B 2281701375B
+  mkpart primary 2264924160B 2281701375B
   name 25 recovery
   mkpart primary 2348843008B 2610987007B
   name 30 vendor
