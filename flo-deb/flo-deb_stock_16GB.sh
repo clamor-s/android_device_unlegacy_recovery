@@ -45,9 +45,9 @@ ln -sf /dev/block/mmcblk0p25 recovery
 ln -sf /dev/block/mmcblk0p30 userdata
 
 dd if=/tmp/backup/misc.img of=/dev/block/mmcblk0p24
-dd if=/tmp/backup/recovery.img of=/dev/block/mmcblk0p25
+dd if=/tmp/backup/recovery.img of=/dev/block/mmcblk0p14
 
 rm /tmp/backup/misc.img
 rm /tmp/backup/recovery.img
 rm /sbin/parted
-reboot recovery
+reboot
