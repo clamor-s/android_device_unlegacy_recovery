@@ -3,7 +3,7 @@
 # Copyright (C) 2018 Unlegacy Android Project
 # Copyright (C) 2018 Svyatoslav Ryhel
 #
-# Made for Flo and Deb 32GB
+# Made for Flo and Deb 32GB (Hynix)
 #
 
 mkdir /tmp/backup
