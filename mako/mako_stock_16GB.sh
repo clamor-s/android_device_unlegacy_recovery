@@ -6,6 +6,7 @@
 # Made for Mako 16GB
 #
 
+umount /system
 umount /data
 umount /sdcard
 umount /cache

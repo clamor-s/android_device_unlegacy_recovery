@@ -10,6 +10,7 @@ mkdir /tmp/backup
 dd if=/dev/block/mmcblk0p27 of=/tmp/backup/crypto.img
 dd if=/dev/block/mmcblk0p30 of=/tmp/backup/grow.img
 
+umount /system
 umount /data
 umount /sdcard
 umount /cache

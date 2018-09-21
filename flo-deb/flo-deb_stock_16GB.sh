@@ -10,6 +10,7 @@ mkdir /tmp/backup
 dd if=/dev/block/mmcblk0p24 of=/tmp/backup/misc.img
 dd if=/dev/block/mmcblk0p25 of=/tmp/backup/recovery.img
 
+umount /system
 umount /data
 umount /sdcard
 umount /cache
