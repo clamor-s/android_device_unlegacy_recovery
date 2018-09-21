@@ -7,6 +7,7 @@
 #
 
 umount /system
+umount /vendor
 umount /data
 umount /sdcard
 umount /cache
