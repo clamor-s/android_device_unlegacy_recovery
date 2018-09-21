@@ -11,7 +11,6 @@ umount /sdcard
 umount /cache
 
 parted /dev/block/mmcblk0 <<EOF
-  unit b
   rm 21
   rm 22
   rm 23
