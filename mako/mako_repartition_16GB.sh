@@ -14,13 +14,13 @@ parted /dev/block/mmcblk0 <<EOF
   rm 21
   rm 22
   rm 23
-  mkpart primary 159383552 1732247551
+  mkpart primary 159383552B 1732247551B
   name 21 system
-  mkpart primary 1732247552 1994391551
+  mkpart primary 1732247552B 1994391551B
   name 22 vendor
-  mkpart primary 1994391552 2099249151
+  mkpart primary 1994391552B 2099249151B
   name 23 cache
-  mkpart primary 2099249152 15756951551
+  mkpart primary 2099249152B 15756951551B
   name 26 userdata
   quit
 EOF
