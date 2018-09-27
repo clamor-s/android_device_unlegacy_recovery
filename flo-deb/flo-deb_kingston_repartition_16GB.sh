@@ -3,7 +3,7 @@
 # Copyright (C) 2018 Unlegacy Android Project
 # Copyright (C) 2018 Svyatoslav Ryhel
 #
-# Made for Flo and Deb 16GB
+# Made for Flo and Deb 16GB (Kingston)
 #
 
 mkdir /tmp/backup
@@ -31,7 +31,7 @@ parted /dev/block/mmcblk0 <<EOF
   name 25 recovery
   mkpart primary 2348843008B 2610987007B
   name 30 vendor
-  mkpart primary 2610987008B 15757983231B
+  mkpart primary 2610987008B 15468576255B
   name 31 userdata
   quit
 EOF
