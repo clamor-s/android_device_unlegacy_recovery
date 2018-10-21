@@ -1,0 +1,22 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+# <src>                                                 <mnt_point>         <type>    <mnt_flags>                                                                     <fs_mgr_flags>
+
+# Init mount points
+/dev/block/platform/sdhci-tegra.3/by-name/SOS           /recovery           emmc      defaults                                                                        defaults
+/dev/block/platform/sdhci-tegra.3/by-name/LNX           /boot               emmc      defaults                                                                        defaults
+/dev/block/platform/sdhci-tegra.3/by-name/APP           /system             ext4      ro                                                                              wait
+/dev/block/platform/sdhci-tegra.3/by-name/CAC           /cache              f2fs      noatime,nosuid,nodev,nodiratime,discard,inline_xattr,inline_data,inline_dentry  wait,check,formattable
+/dev/block/platform/sdhci-tegra.3/by-name/CAC           /cache              ext4      noatime,nosuid,nodev,nomblk_io_submit,errors=panic                              wait,check,formattable
+/dev/block/platform/sdhci-tegra.3/by-name/MSC           /misc               emmc      defaults                                                                        defaults
+/dev/block/platform/sdhci-tegra.3/by-name/USP           /staging            emmc      defaults                                                                        defaults
+/dev/block/platform/sdhci-tegra.3/by-name/UDA           /data               f2fs      noatime,nosuid,nodev,nodiratime,discard,inline_xattr,inline_data,inline_dentry  wait
+/dev/block/platform/sdhci-tegra.3/by-name/UDA           /data               ext4      noatime,nosuid,nodev,nomblk_io_submit,errors=panic                              wait
+/dev/block/platform/sdhci-tegra.3/by-name/DRM           /persist-lg         ext4      nosuid,nodev,barrier=1                                                          wait
+/dev/block/platform/sdhci-tegra.3/by-name/MLT           /mpt                ext4      nosuid,nodev,barrier=1,data=ordered                                             wait
+/dev/block/platform/sdhci-tegra.3/by-name/CAL           /cal                ext4      nosuid,nodev,barrier=1                                                          wait
+
+# Vold mount points
+/devices/platform/tegra-ehci.0/usb*                     auto                auto      defaults                                                                        voldmanaged=usbdisk:auto

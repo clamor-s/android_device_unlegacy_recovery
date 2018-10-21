@@ -1,0 +1,11 @@
+# mount point      fstype          device                                          flags
+
+/recovery          emmc            /dev/block/platform/sdhci-tegra.3/by-name/SOS
+/boot              emmc            /dev/block/platform/sdhci-tegra.3/by-name/LNX
+/system            ext4            /dev/block/platform/sdhci-tegra.3/by-name/APP
+/cache             ext4            /dev/block/platform/sdhci-tegra.3/by-name/CAC
+/misc              emmc            /dev/block/platform/sdhci-tegra.3/by-name/MSC
+/staging           emmc            /dev/block/platform/sdhci-tegra.3/by-name/USP
+/data              ext4            /dev/block/platform/sdhci-tegra.3/by-name/UDA
+
+/usb-otg           vfat            /dev/block/sda1           /dev/block/sda        flags=display="USB-OTG";storage;wipeingui;removable
