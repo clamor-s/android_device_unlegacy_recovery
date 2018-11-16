@@ -62,3 +62,5 @@ BOARD_HAS_NO_REAL_SDCARD := true
 TW_NO_USB_STORAGE := false
 TW_INCLUDE_CRYPTO := true
 TW_EXCLUDE_TWRPAPP := true
+# Unlegacy kernel includes generic battery driver for grouper
+TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/bq27541-0
