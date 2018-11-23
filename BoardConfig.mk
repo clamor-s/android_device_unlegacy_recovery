@@ -56,6 +56,7 @@ TARGET_USES_MKE2FS := true
 TW_THEME := landscape_hdpi
 TW_DEVICE_VERSION := 0 UA
 TARGET_RECOVERY_FSTAB := device/lenovo/a2109/fstab.a2109
+BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/a2109/recovery.mk
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_NO_USB_STORAGE := false
