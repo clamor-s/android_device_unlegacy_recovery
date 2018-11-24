@@ -1,0 +1,11 @@
+# mount point      fstype          device                                          flags
+
+/system            ext4            system
+/cache             ext4            cache
+/misc              mtd             misc
+/data              ext4            userdata
+/recovery          mtd             recovery
+/boot              mtd             boot
+/sdcard            vfat            /dev/block/mmcblk0p1      /dev/block/mmcblk0    flags=display="Micro SD Card";storage;wipeingui;removable
+/sdext             auto            /dev/block/mmcblk0p2                            flags=display="Primary SD EXT";storage;wipeingui;removable
+/sdext2            auto            /dev/block/mmcblk0p3                            flags=display="Secondary SD EXT";storage;wipeingui;removable

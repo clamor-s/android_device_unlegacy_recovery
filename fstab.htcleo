@@ -1,0 +1,21 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+# <src>                                 <mnt_point>         <type>    <mnt_flags>                                                                     <fs_mgr_flags>
+
+# Init mount points
+system                                  /system             yaffs2    defaults                                                                        defaults
+system                                  /system             ext4      ro                                                                              wait
+cache                                   /cache              yaffs2    defaults                                                                        defaults
+cache                                   /cache              f2fs      noatime,nosuid,nodev,nodiratime,discard,inline_xattr,inline_data,inline_dentry  wait
+cache                                   /cache              ext4      noatime,nosuid,nodev,nomblk_io_submit,errors=panic                              wait
+misc                                    /misc               mtd       defaults                                                                        defaults
+userdata                                /data               yaffs2    defaults                                                                        defaults
+userdata                                /data               f2fs      noatime,nosuid,nodev,nodiratime,discard,inline_xattr,inline_data,inline_dentry  wait,encryptable=footer
+userdata                                /data               ext4      noatime,nosuid,nodev,nomblk_io_submit,errors=panic                              wait,encryptable=footer
+recovery                                /recovery           mtd       defaults                                                                        defaults
+boot                                    /boot               mtd       defaults                                                                        defaults
+
+# Vold mount points
+/devices/platform/msm_sdcc.2/mmc_host*  auto                vfat      defaults                                                                        voldmanaged=sdcard:1
