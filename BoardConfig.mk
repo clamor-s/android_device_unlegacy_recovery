@@ -56,6 +56,7 @@ TARGET_USES_MKE2FS := true
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_FSTAB = device/htc/htcleo/fstab.htcleo
+BOARD_CUSTOM_BOOTIMG_MK := device/htc/htcleo/recovery.mk
 BOARD_HAS_NO_REAL_SDCARD := false
 TW_CUSTOM_POWER_BUTTON := 107
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
