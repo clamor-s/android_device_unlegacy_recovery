@@ -8,4 +8,4 @@
 /recovery       emmc            /dev/block/platform/sdhci-tegra.3/by-name/SOS
 /boot           emmc            /dev/block/platform/sdhci-tegra.3/by-name/LNX
 /external_sd    vfat            /dev/block/platform/sdhci-tegra.0/by-num/p1         flags=display="Micro SD Card";storage;wipeingui;removable
-/usb-otg        vfat            /devices/platform/tegra-ehci.0/usb2                 flags=display="USB-OTG";storage;wipeingui;removable
+/usb-otg        vfat            /dev/block/platform/tegra-ehci.0/by-num/p1          flags=display="USB-OTG";storage;wipeingui;removable
