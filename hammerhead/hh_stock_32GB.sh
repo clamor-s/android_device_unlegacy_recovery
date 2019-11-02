@@ -25,7 +25,7 @@ parted /dev/block/mmcblk0 <<EOF
   rm 30
   mkpart primary 192937984B 1266679807B
   name 25 system
-  mkpart extended 1266679808B 1298137087B
+  mkpart primary 1266679808B 1298137087B
   name 26 crypto
   mkpart primary 1298137088B 2032140287B
   name 27 cache
