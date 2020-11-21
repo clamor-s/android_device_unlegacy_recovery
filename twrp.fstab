@@ -1,5 +1,6 @@
 # mount point      fstype          device                                          flags
 
+# internal storage
 /system            ext4            /dev/block/mmcblk0p1
 /cache             ext4            /dev/block/mmcblk0p2
 /misc              emmc            /dev/block/mmcblk0p3
@@ -8,5 +9,11 @@
 /data              ext4            /dev/block/mmcblk0p8                            flags=length=-16384
 /recovery          emmc            /dev/block/mmcblk0p9
 /boot              emmc            /dev/block/mmcblk0p10
+
+# image blocks
+/system_image      emmc            /dev/block/mmcblk0p1                            flags=display="System Image";flashimg=1
+/vendor_image      emmc            /dev/block/mmcblk0p7                            flags=display="Vendor Image";flashimg=1
+
+# removable storage
 /external_sdcard   vfat            /dev/block/mmcblk1p1      /dev/block/mmcblk1    flags=display="Micro SD Card";storage;wipeingui;removable
 /dock_sdcard       vfat            /dev/block/sda1           /sda                  flags=display="Dock SD Card";storage;wipeingui;removable
